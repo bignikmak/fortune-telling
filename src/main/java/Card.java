@@ -1,13 +1,14 @@
 
 
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
 
 public class Card {
     private String name, suite;
     private int value;
-    private BufferedImage image;
+    private FileInputStream image;
 
-    public Card(String name, String suite, int value, BufferedImage image) {
+    public Card(String name, String suite, int value, FileInputStream image) {
         this.name = name;
         this.suite = suite;
         this.value = value;
@@ -19,7 +20,7 @@ public class Card {
         this.suite = suite;
     }
 
-    public Card(String name, String suite, BufferedImage image) {
+    public Card(String name, String suite, FileInputStream image) {
         this.name = name;
         this.suite = suite;
         this.image = image;
@@ -37,7 +38,7 @@ public class Card {
         return value;
     }
 
-    public BufferedImage getImage() {
+    public FileInputStream getImage() {
         return image;
     }
 
