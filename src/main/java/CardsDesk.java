@@ -1,3 +1,5 @@
+import javafx.scene.shape.Path;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,9 +16,10 @@ public class CardsDesk {
     public static FileInputStream cardImg;
 
     static {
+
         try {
-            cardImg = new FileInputStream(new File("/home/qa/IdeaProjects/fortune-telling/src/main/java/images/card.jpg"));
-        } catch (IOException e) {
+            cardImg = new FileInputStream(new File("/"));
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
